@@ -26,6 +26,6 @@ int main()
     printf("Enter the number to find the square root of: ");
     scanf("%lf", &num);
     ans = Sqrt(num);
-    printf("The square root of %0lf is %0lf", num, ans);
+    printf("The square root of %lf is %lf", num, ans);
     return 0;
 }
