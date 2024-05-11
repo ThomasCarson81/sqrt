@@ -8,8 +8,10 @@ double Sqrt(double x)
     double low = 0;
     double high = x;
     double mid = low / 2 + high / 2;
-    while (mid * mid != x)
+    double tol = 1E-5;
+    while (!(mid * mid < x + tol && mid * mid > x - tol))
     {
+        printf("Trying: %lf\n", mid);
         if (mid * mid < x)
             low = mid;
         else
